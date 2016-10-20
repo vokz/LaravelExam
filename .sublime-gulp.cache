@@ -1,0 +1,1 @@
+{"C:\\Users\\ph2150097\\Documents\\laravel\\tut\\gulpfile.js": {"tasks": {"watch": {"name": "watch", "dependencies": ""}, "default": {"name": "default", "dependencies": ""}, "tdd": {"name": "tdd", "dependencies": ""}, "sass": {"name": "sass", "dependencies": ""}}, "sha1": "dc6f1ebb4eafd867d781b3d635919002d357d85b"}}

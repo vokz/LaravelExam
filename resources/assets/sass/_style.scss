@@ -1,0 +1,19 @@
+.wrap{
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapInner{
+	display: block;
+	margin: 0 auto;
+	width: 1027px;
+}
+
+header{
+	overflow: hidden;
+	display: block;
+	padding-top: 22px;
+	height: 596px;
+	background: $backgroundDefault url('/images/Headbackground.png') no-repeat top center;
+}
