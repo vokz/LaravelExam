@@ -293,29 +293,29 @@ main{
 
 	.sectionBlockA{
 		display: block;
+		padding-bottom: 86px;
 
 		.features{
 			overflow: hidden;
 			display: block;
 			position: relative;
-    		padding: 80px 0 0 144px;
+			padding-top: 80px;
+			padding-left: 0;
 			width: 100%;
 			list-style: none;
-			.item{
-				display: block;
-				width: 24%;
+			.featureItems{
+				display: inline-block;
+				padding: 0;
+				width: 25%;
 				text-align: center;
 				float: left;
 
 				img{
 					display: inline-block;
-					vertical-align: middle;
-					margin-bottom: 6px;
 				}
 
 				h3{
 					line-height: 20px;
-					margin: 30px 0;
 					font-size: 20px !important;
 					font-family: $familyHead;
 					color: $fontGreen ;
@@ -328,70 +328,225 @@ main{
 				}
 
 				&:first-child{
-					margin-right: 7px;
-
+					padding-left: 28px;
 					img{
-						margin-right: 65px;
+					    margin-right: 26px;
 					}
 
 					h3{
-						margin: 22px 78px 0 0;
+					    margin: 28px 28px 0 0;
 					}
 
 					p{
-						margin: 24px 0 0 0;
-						letter-spacing: 0.4px;
-						line-height: 1.6;
+						margin-top: 25px;
+    					line-height: 1.5;
 					}
 				}
 
 				&:nth-child(2){
-					margin-right: 15px;
-
+					padding-left: 44px;
 					img{
-						margin: 27px 75px 0px 0px;
+					    margin: 27px 47px 0 0;
 					}
 
 					h3{
-						margin: 29px 91px 0 10px;
+						margin: 28px 52px 0 0;
 					}
 
 					p{
-						margin: 23px 0 0 0;
-					    letter-spacing: 0.6px;
-					    line-height: 1.6;
+						margin-top: 26px;
 					}
 				}
 
 				&:nth-child(3){
+					padding-left: 43px;
 					img{
-						margin: 37px 91px 0 0;
+					    margin: 37px 61px 0 0;
 					}
 
 					h3{
-						margin: 39px 90px 0 0;
+						margin: 39px 59px 0 0;;
 					}
 
 					p{
-						margin: 24px 0 0 0;
-    					letter-spacing: 1px;
+						margin-top: 25px;
 					}
 				}
 
 				&:last-child{
+					padding-left: 46px;
 					img{
-						margin: 33px 0 0 37px;
+					    margin: 33px 51px 0 0;
 					}
 
 					h3{
-						margin: 28px 0 0 41px;
+					    margin: 28px 46px 0 0;
 					}
 
 					p{
-						margin:0;
+						margin-top: 25px;
+					}
+				}
+
+				@media only screen and (max-width : 990px) {
+					display: inline-block;
+					width: 48%;
+					float: left;
+					height: 300px;
+				}
+
+				@media only screen and (max-width : 767px) {
+					display: block;
+					width: 100%;
+				}
+
+				@media only screen and (max-width : 512px) {
+					height: auto;
+					max-height: 400px;
+					&:not(:last-child){
+						margin-bottom: 45px;
 					}
 				}
 			}
+		}
+	}
+
+	.sectionBlockB{
+		display: block;
+		padding: 54px 0 56px 0;
+		background-color: #2a3a41;
+		box-sizing: border-box;
+    	-moz-box-sizing: border-box;
+
+		.vidContainer{
+			position: relative;
+			display: table;
+			max-width: 1015px;
+			max-height: 564px;
+			width: 100%;
+			height: 564px;
+			margin: 0 auto;
+			box-sizing: border-box;
+    		-moz-box-sizing: border-box;
+
+    		@media only screen and (max-width : 512px) {
+				height: 100%;
+			}
+
+			iframe{
+				width: 100%;
+				height: 564px;
+				box-sizing: border-box;
+    			-moz-box-sizing: border-box;
+
+    			@media only screen and (max-width : 512px) {
+					height: 100%;
+				}
+			}
+		}
+	}
+
+	.sectionBlockC{
+		display: block;
+		padding-top: 43px;
+		padding-bottom: 56px;
+		background-color: #eaf3e3;
+		text-align: center;
+
+		h2{
+			margin: 20px 0 0 3px;
+			font-size: 27.4px!important;
+			font-family: $familyHead;
+			color: #213d4c;
+		}
+
+		p{
+			max-width: 790px;
+			width: 100%;
+    		margin: 0 auto;
+    		padding-top: 20px;
+			font-size: 20px;
+			font-family: $familyDefault;
+		}
+	}
+
+	.sectionBlockD{
+		display: block;
+		padding-top: 20px;
+		padding-bottom: 40px;
+		background-color: #fff;
+		text-align: center;
+
+		h2{
+			margin: 20px 0 0 3px;
+			font-size: 27.4px!important;
+			font-family: $familyHead;
+			color: #213d4c;
+		}
+
+		p{
+    		margin: 0 auto;
+    		padding-top: 10px;
+			font-size: 18px;
+			font-family: $familyDefault;
+		}
+
+		div{
+			display: inline-block;
+			margin-top: 22px;
+			img{
+				float: left;
+				&:first-child{
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+
+	.sectionBlockE{
+		display: block;
+		padding-top: 43px;
+		padding-bottom: 50px;
+		background-color: #eaf3e3;
+		text-align: center;
+
+		h2{
+			margin: 20px 0 0 3px;
+			font-size: 27.4px!important;
+			font-family: $familyHead;
+			color: #213d4c;
+		}
+
+		p{
+			max-width: 790px;
+			width: 100%;
+    		margin: 0 auto;
+    		padding-top: 20px;
+    		font-size: 18px;
+			font-family: $familyDefault;
+		}
+
+		a{
+			color: #7bbf43;
+		}
+	}
+}
+
+footer{
+	padding: 20px 0 23px 0;
+	background-color: $backgroundDefault;
+	color: $fontLight;
+
+	a{
+		color: $fontLight;
+		float: right;
+	}
+	p{
+		padding: 0;
+		margin: 0 0 3px;
+		float: left;
+		a{
+			color: $fontLight;
 		}
 	}
 }

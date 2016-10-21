@@ -13,7 +13,7 @@
 		<main>
 			<div class="sectionBlockA">
 				<ul class="features">
-					<li class="item">
+					<li class="featureItems">
 						<img src="{{ URL::asset('images/para01.png') }}" alt="">
 						<h3>A New Idea</h3>
 						<p>
@@ -21,7 +21,7 @@
 						</p>
 					</li>
 
-					<li class="item">
+					<li class="featureItems">
 						<img src="{{ URL::asset('images/para02.png') }}" alt="">
 						<h3>Sorted</h3>
 						<p>
@@ -29,7 +29,7 @@
 						</p>
 					</li>
 
-					<li class="item">
+					<li class="featureItems">
 						<img src="{{ URL::asset('images/para03.png') }}" alt="">
 						<h3>Never Forget</h3>
 						<p>
@@ -37,7 +37,7 @@
 						</p>
 					</li>
 
-					<li class="item">
+					<li class="featureItems">
 						<img src="{{ URL::asset('images/para04.png') }}" alt="">
 						<h3>Bank-grade Security</h3>
 						<p>
@@ -45,6 +45,36 @@
 						</p>
 					</li>
 				</ul>
+			</div>
+
+			<div class="sectionBlockB">
+				<div class="vidContainer">
+					<iframe src="https://www.youtube.com/embed/9-XIi46lusI" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+
+			<div class="sectionBlockC">
+				<img src="{{ URL::asset('images/star.png') }}" alt="">
+				<h2>Features coming soon</h2>
+				<p>
+					Getonatop apps are getting even more great features very soon.  We are going to tell you when they are ready.., but keeping checking anyway. We know you are going to love them too!
+				</p>
+			</div>
+
+			<div class="sectionBlockD">
+				<h2>Ready to get started?</h2>
+				<p>Download the Get Onatop app today</p>
+				<div>
+					<img src="{{ URL::asset('images/appstorefoot.png') }}" alt="">
+					<img src="{{ URL::asset('images/googleplayfoot.png') }}" alt="">
+				</div>
+			</div>
+
+			<div class="sectionBlockE">
+				<img src="{{ URL::asset('images/cloud.png') }}" alt="">
+				<p>
+					If you would like to know more about Getonatop and why we have put it together for you, if you are interested in helping us grow, or if you want to invest, then please get in touch: <a href="#">info@getonatop.com</a>.   We would love to hear from you!
+				</p>
 			</div>
 		</main>
 		<footer>
