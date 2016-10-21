@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6769,21 +6770,227 @@ button.close {
 .fadeInLeftShort.go {
   animation-name: fadeInLeftShort; }
 
+body {
+  min-width: 320px; }
+
 .wrap {
-  overflow: hidden;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  height: auto; }
 
 .wrapInner {
   display: block;
   margin: 0 auto;
-  width: 1027px; }
+  padding-left: 18px;
+  max-width: 1027px;
+  width: 100%; }
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
 
 header {
-  overflow: hidden;
   display: block;
+  position: relative;
   padding-top: 22px;
-  height: 596px;
-  background: #84c44e url("/images/Headbackground.png") no-repeat top center; }
+  height: auto;
+  background: #84c44e url("/images/Headbackground.png") no-repeat bottom center; }
+  header .topHead .logo {
+    display: inline-block; }
+  header .topHead .social {
+    display: inline-block;
+    margin: 17px 2px 0 0;
+    float: right;
+    list-style: none; }
+    header .topHead .social li {
+      display: inline-block;
+      position: relative; }
+      header .topHead .social li:first-child {
+        margin-right: 11px; }
+      header .topHead .social li:nth-child(2) {
+        margin-right: 12px; }
+  header .bannerArea {
+    position: relative;
+    padding: 0 !important; }
+    header .bannerArea .desc {
+      display: inline-block;
+      position: relative;
+      margin-top: 68px;
+      max-width: 502px;
+      width: 100%;
+      float: left; }
+      header .bannerArea .desc h2 {
+        margin-bottom: 28px;
+        font-size: 27.4px !important;
+        font-family: "Montserrat", sans-serif;
+        color: #fff !important; }
+      header .bannerArea .desc p {
+        font-size: 16px;
+        font-family: "Open Sans", sans-serif;
+        color: #fff !important;
+        letter-spacing: 1px;
+        line-height: 1.62; }
+      header .bannerArea .desc .headBtn {
+        display: inline-block;
+        position: relative;
+        list-style: none;
+        margin-top: 41px;
+        margin-bottom: 15px;
+        float: left;
+        padding: 0; }
+        header .bannerArea .desc .headBtn li {
+          display: inline-block;
+          float: left; }
+          header .bannerArea .desc .headBtn li:not(:last-child) {
+            margin-right: 12px; }
+      header .bannerArea .desc .minitext {
+        margin-bottom: 32px;
+        color: #fff !important;
+        font-size: 14px !important;
+        letter-spacing: 0.5px !important; }
+    header .bannerArea .phones {
+      display: inline-block !important;
+      position: relative;
+      left: 47px;
+      max-width: 461px;
+      margin-top: 44px; }
+      header .bannerArea .phones p {
+        display: inline-block;
+        position: absolute;
+        float: left; }
+      header .bannerArea .phones p:first-child {
+        margin-top: 36px;
+        left: 16px;
+        animation-delay: 1s;
+        -webkit-animation-delay: 1s;
+        -moz-animation-delay: 1s; }
+      header .bannerArea .phones p:last-child {
+        left: 174px;
+        animation-delay: 0.5s;
+        -webkit-animation-delay: 0.5s;
+        -moz-animation-delay: 0.5s; }
+    @media only screen and (max-width: 1100px) {
+      header .bannerArea {
+        padding: 0 20px 0 20px !important; }
+        header .bannerArea .desc {
+          max-width: 480px; } }
+    @media only screen and (max-width: 990px) {
+      header .bannerArea {
+        padding: 0 20px 0 20px !important; }
+        header .bannerArea .desc {
+          margin-top: 0;
+          max-width: 432px;
+          min-width: 32px;
+          width: 38%; }
+          header .bannerArea .desc .headBtn li {
+            float: left; }
+            header .bannerArea .desc .headBtn li:not(:last-child) {
+              margin-bottom: 12px; }
+          header .bannerArea .desc .minitext {
+            margin-bottom: 9px; }
+        header .bannerArea .phones {
+          position: absolute;
+          bottom: 0;
+          right: 228px;
+          left: auto !important; }
+          header .bannerArea .phones p {
+            margin-bottom: 0; }
+          header .bannerArea .phones p.dark {
+            position: relative; }
+          header .bannerArea .phones p.light {
+            position: absolute; } }
+    @media only screen and (max-width: 766px) {
+      header .bannerArea .desc {
+        display: block !important;
+        max-width: 766px;
+        width: 100%; }
+        header .bannerArea .desc .headBtn {
+          margin: 0 auto; }
+        header .bannerArea .desc .minitext {
+          margin-bottom: 268px;
+          float: left; }
+      header .bannerArea .phones {
+        position: absolute;
+        bottom: 0;
+        right: 228px;
+        left: auto !important; }
+        header .bannerArea .phones p.dark img {
+          width: 50%; }
+        header .bannerArea .phones p.light {
+          bottom: 0; }
+          header .bannerArea .phones p.light img {
+            width: 100%; }
+        header .bannerArea .phones p:first-child {
+          margin-top: 36px;
+          left: 16px;
+          top: 0px; }
+        header .bannerArea .phones p:last-child {
+          left: 107px; } }
+    @media only screen and (max-width: 512px) {
+      header .bannerArea .desc {
+        margin-top: 0;
+        max-width: 432px;
+        min-width: 32px;
+        width: 100%; }
+        header .bannerArea .desc div {
+          display: block;
+          text-align: center; }
+          header .bannerArea .desc div .headBtn {
+            display: inline-block; }
+            header .bannerArea .desc div .headBtn li {
+              display: block;
+              width: 100%; }
+              header .bannerArea .desc div .headBtn li:not(:last-child) {
+                margin-bottom: 12px; }
+        header .bannerArea .desc .minitext {
+          margin-top: 10%;
+          margin-bottom: 100%; }
+      header .bannerArea .phones {
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+        left: auto !important; }
+        header .bannerArea .phones p:first-child {
+          margin-top: 36px;
+          left: 30px;
+          top: 0px; }
+          header .bannerArea .phones p:first-child img {
+            width: 50%; }
+        header .bannerArea .phones p:last-child {
+          left: 35%;
+          bottom: 0; }
+          header .bannerArea .phones p:last-child img {
+            width: 90%; } }
+
+main {
+  display: block; }
+  main .sectionBlockA {
+    display: block; }
+    main .sectionBlockA .features {
+      overflow: hidden;
+      display: block;
+      position: relative;
+      padding: 80px 115px;
+      width: 100%; }
+      main .sectionBlockA .features .item {
+        display: block;
+        width: 25%;
+        text-align: center;
+        float: left; }
+        main .sectionBlockA .features .item img {
+          display: inline-block;
+          vertical-align: middle;
+          margin-bottom: 6px; }
+        main .sectionBlockA .features .item h3 {
+          line-height: 20px;
+          margin: 30px 0;
+          font-size: 20px !important;
+          font-family: "Montserrat", sans-serif;
+          color: #84c44e; }
+        main .sectionBlockA .features .item p {
+          text-align: left;
+          font-size: 16px; }
 
 /*# sourceMappingURL=app.css.map */
