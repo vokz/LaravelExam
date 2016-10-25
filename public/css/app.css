@@ -7174,9 +7174,10 @@ footer {
   padding: 24px 0 43px 0;
   background-color: #84c44e;
   color: #fff; }
-  footer a {
+  footer a.siteLink {
     color: #fff;
-    float: right; }
+    float: right;
+    font-size: 16px; }
   footer p {
     padding: 0;
     margin: 0 0 3px;

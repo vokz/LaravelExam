@@ -597,9 +597,10 @@ footer{
 	background-color: $backgroundDefault;
 	color: $fontLight;
 
-	a{
+	a.siteLink{
 		color: $fontLight;
 		float: right;
+		font-size: 16px;
 	}
 	p{
 		padding: 0;
