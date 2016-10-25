@@ -23,12 +23,30 @@ body{
 	clear : both;
 }
 
+.tcenter{
+	text-align: center;
+}
+
 header{
 	display: block;
 	position: relative;
-	padding-top: 22px;
 	height: auto;
-	background: $backgroundDefault url('/images/Headbackground.png') no-repeat bottom center;
+
+	div.privacyHead,
+	div.indexyHead{
+		display: block;
+		padding-top: 22px;
+	}
+
+	div.privacyHead{
+		background: $backgroundDefault url(/images/BGprivacy.png) no-repeat 1px -19px;
+		background-size : cover;
+	}
+
+	div.indexHead{
+		background: $backgroundDefault url('/images/Headbackground.png') no-repeat bottom center;
+		background-size : cover;
+	}
 
 	.topHead{
 		.logo{
@@ -60,6 +78,14 @@ header{
 	.bannerArea{
 		position: relative;
 		padding: 0!important;
+		
+
+		h2{
+				margin-bottom: 28px;
+				font-size: 27.4px!important;
+				font-family: $familyHead;
+				color : $fontLight!important;
+		}
 
 		.desc{
 			display: inline-block;
@@ -68,13 +94,6 @@ header{
 			max-width: 502px;
 			width: 100%;
 			float: left;
-
-			h2{
-				margin-bottom: 28px;
-				font-size: 27.4px!important;
-				font-family: $familyHead;
-				color : $fontLight!important;
-			}
 
 			p{
 				font-size: $fontDefault;
@@ -283,9 +302,8 @@ header{
 					}
 				}
 		}
-
-		
 	}
+	
 }
 
 main{
@@ -300,7 +318,8 @@ main{
 			display: block;
 			position: relative;
 			padding-top: 80px;
-			padding-left: 0;
+			padding-left: 117px;
+    		padding-right: 117px;
 			width: 100%;
 			list-style: none;
 			.featureItems{
@@ -407,6 +426,11 @@ main{
 						margin-bottom: 45px;
 					}
 				}
+			}
+
+			@media only screen and (max-width : 990px) {
+				padding-left: 0;
+    			padding-right: 0;
 			}
 		}
 	}
@@ -532,8 +556,44 @@ main{
 	}
 }
 
+.privacyBanner{
+	display: block;
+	text-align: center;
+	margin-bottom: 64px;
+
+	img{
+		&:first-child{
+			margin-right: 12px;
+		}
+	}
+}
+
+.privacyContent{
+	font-family: $familyDefault;
+	padding: 75px 0 130px 0;
+	div{
+		margin-bottom: 40px;
+		h1,h2{
+			font-weight: bold;
+			color: #7bbf43;
+		}
+
+		h1{
+			font-size: 20px;
+		}
+
+		h2,p{
+			font-size: 16px;
+		}
+
+		p{
+			margin-top: 30px;
+		}
+	}
+}
+
 footer{
-	padding: 20px 0 23px 0;
+	padding: 24px 0 43px 0;
 	background-color: $backgroundDefault;
 	color: $fontLight;
 
@@ -547,6 +607,10 @@ footer{
 		float: left;
 		a{
 			color: $fontLight;
+		}
+
+		a.siteLink{
+			font-size: 19px;
 		}
 	}
 }

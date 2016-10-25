@@ -6791,12 +6791,23 @@ body {
   display: block;
   clear: both; }
 
+.tcenter {
+  text-align: center; }
+
 header {
   display: block;
   position: relative;
-  padding-top: 22px;
-  height: auto;
-  background: #84c44e url("/images/Headbackground.png") no-repeat bottom center; }
+  height: auto; }
+  header div.privacyHead,
+  header div.indexyHead {
+    display: block;
+    padding-top: 22px; }
+  header div.privacyHead {
+    background: #84c44e url(/images/BGprivacy.png) no-repeat 1px -19px;
+    background-size: cover; }
+  header div.indexHead {
+    background: #84c44e url("/images/Headbackground.png") no-repeat bottom center;
+    background-size: cover; }
   header .topHead .logo {
     display: inline-block; }
   header .topHead .social {
@@ -6814,6 +6825,11 @@ header {
   header .bannerArea {
     position: relative;
     padding: 0 !important; }
+    header .bannerArea h2 {
+      margin-bottom: 28px;
+      font-size: 27.4px !important;
+      font-family: "Montserrat", sans-serif;
+      color: #fff !important; }
     header .bannerArea .desc {
       display: inline-block;
       position: relative;
@@ -6821,11 +6837,6 @@ header {
       max-width: 502px;
       width: 100%;
       float: left; }
-      header .bannerArea .desc h2 {
-        margin-bottom: 28px;
-        font-size: 27.4px !important;
-        font-family: "Montserrat", sans-serif;
-        color: #fff !important; }
       header .bannerArea .desc p {
         font-size: 16px;
         font-family: "Open Sans", sans-serif;
@@ -6974,7 +6985,8 @@ main {
       display: block;
       position: relative;
       padding-top: 80px;
-      padding-left: 0;
+      padding-left: 117px;
+      padding-right: 117px;
       width: 100%;
       list-style: none; }
       main .sectionBlockA .features .featureItems {
@@ -7043,6 +7055,10 @@ main {
             max-height: 400px; }
             main .sectionBlockA .features .featureItems:not(:last-child) {
               margin-bottom: 45px; } }
+      @media only screen and (max-width: 990px) {
+        main .sectionBlockA .features {
+          padding-left: 0;
+          padding-right: 0; } }
   main .sectionBlockB {
     display: block;
     padding: 54px 0 56px 0;
@@ -7132,8 +7148,30 @@ main {
     main .sectionBlockE a {
       color: #7bbf43; }
 
+.privacyBanner {
+  display: block;
+  text-align: center;
+  margin-bottom: 64px; }
+  .privacyBanner img:first-child {
+    margin-right: 12px; }
+
+.privacyContent {
+  font-family: "Open Sans", sans-serif;
+  padding: 75px 0 130px 0; }
+  .privacyContent div {
+    margin-bottom: 40px; }
+    .privacyContent div h1, .privacyContent div h2 {
+      font-weight: bold;
+      color: #7bbf43; }
+    .privacyContent div h1 {
+      font-size: 20px; }
+    .privacyContent div h2, .privacyContent div p {
+      font-size: 16px; }
+    .privacyContent div p {
+      margin-top: 30px; }
+
 footer {
-  padding: 20px 0 23px 0;
+  padding: 24px 0 43px 0;
   background-color: #84c44e;
   color: #fff; }
   footer a {
@@ -7145,5 +7183,7 @@ footer {
     float: left; }
     footer p a {
       color: #fff; }
+    footer p a.siteLink {
+      font-size: 19px; }
 
 /*# sourceMappingURL=app.css.map */
