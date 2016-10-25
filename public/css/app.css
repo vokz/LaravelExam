@@ -6805,6 +6805,9 @@ header {
   header div.privacyHead {
     background: #84c44e url(/images/BGprivacy.png) no-repeat 1px -19px;
     background-size: cover; }
+    @media only screen and (max-width: 1400px) {
+      header div.privacyHead {
+        background: #84c44e url(/images/BGprivacy.png) no-repeat bottom center; } }
   header div.indexHead {
     background: #84c44e url("/images/Headbackground.png") no-repeat bottom center;
     background-size: cover; }

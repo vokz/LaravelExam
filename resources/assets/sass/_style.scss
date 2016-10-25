@@ -41,6 +41,10 @@ header{
 	div.privacyHead{
 		background: $backgroundDefault url(/images/BGprivacy.png) no-repeat 1px -19px;
 		background-size : cover;
+
+		@media only screen and (max-width : 1400px) {
+			background: $backgroundDefault url(/images/BGprivacy.png) no-repeat bottom center;
+		}
 	}
 
 	div.indexHead{
